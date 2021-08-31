@@ -14,9 +14,9 @@ app.get("/", (req, res) => {
 app.use("/todo", todoRouter);
 
 app.use((req, res) => {
-  res.status(404).send("Whoops!");
+  res.status(404).send("Uh oh, looks like you messed up!");
 });
 
-const port = process.env.PORT || 4000;
+const port = 4000;
 app.listen(port);
 console.log(`App listening on port ${port}`);
