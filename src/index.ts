@@ -1,14 +1,11 @@
-import { config } from "dotenv";
 import express from "express";
 import { todoRouter } from "./todoItems";
-
-config();
 
 const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello cruel world!");
+  res.send("Hello world!");
 });
 
 app.use("/todo", todoRouter);
