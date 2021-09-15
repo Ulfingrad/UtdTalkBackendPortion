@@ -51,7 +51,7 @@ Don't have the front-end portion of the app set up yet? No worries! You can inte
 ---
 
 # Completed version
-The completed version of this app is just in a separate branch! Go to the Github repo (which can be found [here](https://github.com/Ulfingrad/UtdTalkBackendPortion))
+The completed version of this app is just in a separate branch!
 
 In order to get the completed app up and running first make sure you have completed the first 3 steps in the [Setting up the environment ](##Setting-up-the-environment) section.
 
