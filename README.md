@@ -16,9 +16,12 @@ If you are simply looking to run the completed app, check out the section on the
 To setup the app for practice, a few commands will need to be run to get started:
 
 ## Setting up the environment
-1. First off, make sure you have a terminal to execute the next series of commands inside of. I recommend [git](https://git-scm.com/downloads) as it is a solid terminal, and can be used inside of VS Code. To do so, enter `Ctrl + Shift + \``
+1. First off, make sure you have a terminal to execute the next series of commands inside of. I recommend [git](https://git-scm.com/downloads) as it is a solid terminal, and can be used inside of VS Code.
+
 2. Next, make sure that you have [Node.js](https://nodejs.org/en/download/) installed before doing anything! You WILL NOT be able to run the next series of commands if you do not have Node.js installed.
+
 3. Install Typescript globally by entering `npm install -g typescript` into the console
+
 4. 
 ---
 
