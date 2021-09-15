@@ -8,6 +8,7 @@
 
 # What is this app?
 The purpose of this app is to showcase simple routing and endpoints using Express.js! In the base branch (main) you will find a template of sorts in order to practice creating endpoints and create a working back-end!
+
 ---
 
 # Starting the App
@@ -22,7 +23,8 @@ To setup the app for practice, a few commands will need to be run to get started
 
 3. Install Typescript globally by entering `npm install -g typescript` into the console
 
-4. 
+4.
+ 
 ---
 
 # Interacting with the app
