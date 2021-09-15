@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import { todoRouter } from "./todoItems";
 
-const app = express();
+const app = express(); // Creates our express app
 app.use(express.json()); // Lets the app know that it will potentially be receiving JSON objects
 app.use(cors()); // Necessary in order to interact with the front end
 

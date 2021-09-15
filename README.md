@@ -48,10 +48,24 @@ In this example I have created a script called `dev`, but realistically this can
 # Interacting with the app
 Don't have the front-end portion of the app set up yet? No worries! You can interact with the api you have just created using a piece of software called [insomnia](https://insomnia.rest/).
 
+Once your app is up and running, create a new request, name it whatever you want, and choose the request type you want to start out with.
+![](./assets/newRequest.png)
+
+From there, enter the app url and you should be able to send a request! But how do we change the request type and add a JSON body?
+
+To change the request type, simply click on the current request type and a drop-down menu will appear with all of the available requests!
+![](./assets/changeRequestType.png)
+
+Lastly, we can add a body to certain requests by clicking on the `BODY` tab and choosing what type of body we want (for this app only JSON bodies should be used)
+![](./assets/changeBody.png)
+
+As a quick example, here is what a POST request with a JSON body would look like for the purposes of this app:
+![](./assets/postExample.png)
+
 ---
 
 # Completed version
-The completed version of this app is just in a separate branch!
+The completed version of this app is just in a separate branch called `completed-version`!
 
 In order to get the completed app up and running first make sure you have completed the first 3 steps in the [Setting up the environment ](##Setting-up-the-environment) section.
 
