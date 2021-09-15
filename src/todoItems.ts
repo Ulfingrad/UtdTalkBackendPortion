@@ -5,25 +5,16 @@ export const todoRouter = express.Router(); // Creates and exports the router fo
 const todoList: { id: string, contents: string}[] = []; // Holds the list of todo items. Each todo item MUST be an object with an 'id' and 'contents' attribute, which both MUST be of type 'string'
 let currentId = 0;
 
-todoRouter.get("", (req, res) => { // Returns the list of todo items
-    res.send(todoList);
+// Using the todoRouter, create a GET endpoint that sends back the todoList
+todoRouter.get("", (req, res) => {
 });
 
-todoRouter.post("", (req, res) => { // Adds a todo item to the todoList where the id is the currentId and the contents is the received todoItem
-    const { todoItem } = req.body;
-    const newItem = {id: currentId.toString(), contents: todoItem};
-    todoList.push(newItem);
-    currentId++; // Increments the currentId variable so that each todo item has a unique id
-    res.send(newItem);
+// Using the todoRouter, create a POST endpoint that takes 'todoItem' out of the request body, create a new item (which will be an object with 2 attributes, id and contents which are both strings), 
+// push it onto the todoList array, increment the currentId, and send back the newly created item
+todoRouter.post("", (req, res) => {
 });
 
-todoRouter.delete('/:id', (req, res) => { // Looks for an id to delete based on the route parameters (i.e. in http://localhost:4000/todo/3, 3 would be the route parameter)
-    const { id } = req.params;
-    const index = todoList.findIndex(todoItem => todoItem.id === id); // Will try to find a todo item with the corresponding received id and will return a -1 if no respective id is found
-    if(index === -1) { // Any id not found will result in a 400 error (bad request)
-      res.status(400).send('ERR: todo item must exist to be deleted');
-      return;
-    }
-    todoList.splice(index, 1); // Splices (removes) the element with the specified id
-    res.send(200);
-  })
+// Using the todoRouter, create a DELETE endpoint that expects an id as a router parameter (i.e. http://localhost:4000/todo/id), find the index of the element that matches the input id
+// (and return a 400 status code if the id is not found), splice out that element from todoList, and send back a 200 status code
+todoRouter.delete("/:id", (req, res) => {
+});
