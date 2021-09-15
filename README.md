@@ -1,23 +1,23 @@
 # Getting Started
-  1. [What is this app?](#What-is-this-app?)
+  1. [Purpose of the app](#Purpose-of-the-app)
   1. [Starting the app](#Starting-the-app)
   1. [Interacting with the app](#Interacting-with-the-app)
-  1. [Where can I find a completed version?](#Where-can-I-find-the-completed-version?)
+  1. [Completed version](#Completed-version)
 
 ---
 
-# What is this app?
+# Purpose of the app
 The purpose of this app is to showcase simple routing and endpoints using Express.js! In the base branch (main) you will find a template of sorts in order to practice creating endpoints and create a working back-end!
 
 ---
 
-# Starting the App
+# Starting the app
 If you are simply looking to run the completed app, check out the section on the completed version [below](#Where-can-I-find-the-completed-version?)
 
 To setup the app for practice, a few commands will need to be run to get started:
 
 ## Setting up the environment
-1. Firts things first, make sure you have a terminal to execute the next series of commands inside of. I recommend [git](https://git-scm.com/downloads) as it is a solid terminal, and can be used inside of VS Code.
+1. First things first, make sure you have a terminal to execute the next series of commands inside of. I recommend [git](https://git-scm.com/downloads) as it is a solid terminal, and can be used inside of VS Code.
 
 2. Next, go ahead and clone the repo either using the [GitHub Desktop App](https://desktop.github.com/) or cloning it with the command `git clone https://github.com/Ulfingrad/UtdTalkBackendPortion.git`
 
@@ -47,12 +47,14 @@ In this example I have created a script called `dev`, but realistically this can
 
 # Interacting with the app
 Don't have the front-end portion of the app set up yet? No worries! You can interact with the api you have just created using a piece of software called [insomnia](https://insomnia.rest/).
+
 ---
 
-# Where can I find the completed version?
+# Completed version
 The completed version of this app is just in a separate branch! Go to the Github repo (which can be found [here](https://github.com/Ulfingrad/UtdTalkBackendPortion))
 
 In order to get the completed app up and running first make sure you have completed the first 3 steps in the [Setting up the environment ](##Setting-up-the-environment) section.
 
 Afterwards, simply type `npm i` then `npm run dev` and the app should be up and running!
+
 ---
