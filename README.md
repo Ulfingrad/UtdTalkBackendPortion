@@ -65,7 +65,7 @@ As a quick example, here is what a POST request with a JSON body would look like
 ---
 
 # Completed version
-The completed version of this app is just in a separate branch called `completed-version`!
+The completed version of this app is just in a separate branch called `completed-app`!
 
 In order to get the completed app up and running first make sure you have completed the first 3 steps in the [Setting up the environment ](##Setting-up-the-environment) section.
 
