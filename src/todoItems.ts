@@ -1,15 +1,26 @@
 import express from 'express';
+import { doThings } from './someFile';
 
 export const todoRouter = express.Router(); // Creates and exports the router for the todo route
 
-const todoList: { id: string, contents: string}[] = []; // Holds the list of todo items. Each todo item MUST be an object with an 'id' and 'contents' attribute, which both MUST be of type 'string'
+let todoList: { id: string, contents: string}[] = []; // Holds the list of todo items. Each todo item MUST be an object with an 'id' and 'contents' attribute, which both MUST be of type 'string'
 let currentId = 0;
 
-todoRouter.get("", (req, res) => { // Returns the list of todo items
+todoRouter.get('', (req, res) => { // Returns the list of todo items
     res.send(todoList);
 });
 
-todoRouter.post("", (req, res) => { // Adds a todo item to the todoList where the id is the currentId and the contents is the received todoItem
+todoRouter.get('/example', async (req, res) => {
+  const { input } = req.body;
+  try {
+    const str = await doThings(input);
+    res.send(str);
+  } catch {
+    res.status(400).send();
+  }
+});
+
+todoRouter.post('', (req, res) => { // Adds a todo item to the todoList where the id is the currentId and the contents is the received todoItem
     const { todoItem } = req.body;
     const newItem = {id: currentId.toString(), contents: todoItem};
     todoList.push(newItem);
@@ -26,4 +37,10 @@ todoRouter.delete('/:id', (req, res) => { // Looks for an id to delete based on 
     }
     todoList.splice(index, 1); // Splices (removes) the element with the specified id
     res.send(200);
-  })
+  });
+
+  todoRouter.delete('/', (req, res) => {
+    todoList = [];
+    currentId = 0;
+    res.send({ todoList, currentId });
+  });
